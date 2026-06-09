@@ -222,6 +222,18 @@ const CITY_GL: Record<string, string> = {
   "Guatemala City": "gt", "Antigua": "gt", "Panajachel": "gt", "Flores": "gt", "Quetzaltenango": "gt", "Cobán": "gt",
   "San José": "cr", "Tamarindo": "cr", "Manuel Antonio": "cr", "Monteverde": "cr", "La Fortuna": "cr", "Puerto Viejo": "cr",
   "Belize City": "bz", "San Ignacio": "bz", "Placencia": "bz", "Ambergris Caye": "bz", "Hopkins": "bz", "Caye Caulker": "bz",
+  "Dar es Salaam": "tz", "Arusha": "tz", "Moshi": "tz", "Kilimanjaro": "tz", "Tanga": "tz", "Dodoma": "tz",
+  "Stone Town": "tz", "Nungwi": "tz", "Kendwa": "tz", "Paje": "tz", "Jambiani": "tz", "Matemwe": "tz",
+  "Nairobi": "ke", "Mombasa": "ke", "Malindi": "ke", "Diani Beach": "ke", "Lamu": "ke", "Naivasha": "ke",
+  "Honolulu": "us", "Maui": "us", "Kauai": "us", "Kona": "us", "Hilo": "us", "Lahaina": "us",
+  "Malé": "mv", "Maafushi": "mv", "Hulhumalé": "mv", "Baa Atoll": "mv", "Ari Atoll": "mv", "North Malé Atoll": "mv",
+  "Victoria": "sc", "Beau Vallon": "sc", "La Digue": "sc", "Praslin": "sc", "Mahé": "sc", "Anse Lazio": "sc",
+  "Road Town": "vg", "Virgin Gorda": "vg", "Jost Van Dyke": "vg", "Tortola": "vg", "Anegada": "vg", "Cane Garden Bay": "vg",
+  "Providenciales": "tc", "Grace Bay": "tc", "Grand Turk": "tc", "North Caicos": "tc", "Salt Cay": "tc", "Middle Caicos": "tc",
+  "Papeete": "pf", "Bora Bora": "pf", "Moorea": "pf", "Huahine": "pf", "Raiatea": "pf", "Fakarava": "pf",
+  "Apia": "ws", "Savai'i": "ws", "Upolu": "ws", "Lalomanu": "ws", "Aleipata": "ws", "Falealupo": "ws",
+  "Colombo": "lk", "Galle": "lk", "Kandy": "lk", "Ella": "lk", "Mirissa": "lk", "Trincomalee": "lk",
+  "Mexico City": "mx", "Cancún": "mx", "Tulum": "mx", "Playa del Carmen": "mx", "Puerto Vallarta": "mx", "Oaxaca": "mx",
 };
 
 // ─── low-level API helpers ────────────────────────────────────────────────────
