@@ -207,7 +207,8 @@ export default function SearchSidebar({ onResults, onCitySearch, onSelect, selec
         initial={false}
         animate={{ height: filtersOpen ? "auto" : 0, opacity: filtersOpen ? 1 : 0 }}
         transition={{ duration: 0.2 }}
-        className="overflow-hidden"
+        className="overflow-hidden flex-shrink-0"
+        style={{ maxHeight: filtersOpen ? "60vh" : 0, overflowY: filtersOpen ? "auto" : "hidden" }}
       >
       <div className="px-4 py-3 space-y-4 border-b border-white/[0.06]">
 
