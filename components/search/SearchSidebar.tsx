@@ -92,15 +92,9 @@ export default function SearchSidebar({ onResults, onCitySearch, onSelect, selec
 
   function toggleCountry(c: Country) {
     setFilters((prev) => {
-      const has = prev.countries.includes(c);
-      const next = has
-        ? prev.countries.filter((x) => x !== c)
-        : [...prev.countries, c];
-      if (next.length === 0) return prev; // must have at least one
-      // Reset city if it's not in new country list
-      const newCities = next.flatMap((x) => CITIES_BY_COUNTRY[x]);
-      const city = newCities.includes(prev.city) ? prev.city : newCities[0] ?? "";
-      return { ...prev, countries: next, city };
+      if (prev.countries.length === 1 && prev.countries[0] === c) return prev;
+      const city = CITIES_BY_COUNTRY[c][0] ?? "";
+      return { ...prev, countries: [c], city };
     });
   }
 
