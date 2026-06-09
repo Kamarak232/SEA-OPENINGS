@@ -1,7 +1,7 @@
 // ─── Core domain types ────────────────────────────────────────────────────────
 
-export type VenueType = "hotel" | "hostel" | "restaurant" | "cafe" | "bar" | "guesthouse" | "resort" | "other";
-export type Country = "Thailand" | "Vietnam" | "Cambodia" | "Philippines" | "India" | "Indonesia" | "Malaysia" | "Panama" | "Guatemala" | "Costa Rica" | "Belize" | "Tanzania" | "Zanzibar" | "Kenya" | "Hawaii" | "Maldives" | "Seychelles" | "British Virgin Islands" | "Turks and Caicos" | "Tahiti" | "Samoa" | "Sri Lanka" | "Mexico";
+export type VenueType = "hotel" | "hostel" | "restaurant" | "cafe" | "bar" | "guesthouse" | "resort" | "hvac" | "other";
+export type Country = "Thailand" | "Vietnam" | "Cambodia" | "Philippines" | "India" | "Indonesia" | "Malaysia" | "Panama" | "Guatemala" | "Costa Rica" | "Belize" | "Tanzania" | "Zanzibar" | "Kenya" | "Hawaii" | "Maldives" | "Seychelles" | "British Virgin Islands" | "Turks and Caicos" | "Tahiti" | "Samoa" | "Sri Lanka" | "Mexico" | "United States";
 export type LeadStatus = "discovered" | "contacted" | "demo_sent" | "closed";
 export type SceneType = "tropical" | "mountain" | "urban" | "coastal" | "jungle";
 
@@ -32,6 +32,7 @@ export const CITIES_BY_COUNTRY: Record<Country, string[]> = {
   Samoa:       ["Apia", "Savai'i", "Upolu", "Lalomanu", "Aleipata", "Falealupo"],
   "Sri Lanka": ["Colombo", "Galle", "Kandy", "Ella", "Mirissa", "Trincomalee"],
   Mexico:      ["Mexico City", "Cancún", "Tulum", "Playa del Carmen", "Puerto Vallarta", "Oaxaca"],
+  "United States": ["New York", "Philadelphia", "Miami", "Palm Beach", "Los Angeles", "San Francisco", "Oakland", "Atherton", "Los Altos Hills", "Hillsborough", "Woodside", "Atlanta", "Austin", "Houston", "Dallas"],
 };
 
 export const COUNTRY_FLAGS: Record<Country, string> = {
@@ -58,6 +59,7 @@ export const COUNTRY_FLAGS: Record<Country, string> = {
   Samoa:       "🇼🇸",
   "Sri Lanka": "🇱🇰",
   Mexico:      "🇲🇽",
+  "United States": "🇺🇸",
 };
 
 export const COUNTRY_COLORS: Record<Country, string> = {
@@ -84,6 +86,7 @@ export const COUNTRY_COLORS: Record<Country, string> = {
   Samoa:       "#2DD4BF",
   "Sri Lanka": "#F87171",
   Mexico:      "#65A30D",
+  "United States": "#1D4ED8",
 };
 
 // ─── Business / Venue ─────────────────────────────────────────────────────────
@@ -195,7 +198,7 @@ export interface SearchFilters {
 }
 
 export const DEFAULT_FILTERS: SearchFilters = {
-  countries: ["Thailand", "Vietnam", "Cambodia", "Philippines", "India", "Indonesia", "Malaysia", "Panama", "Guatemala", "Costa Rica", "Belize", "Tanzania", "Zanzibar", "Kenya", "Hawaii", "Maldives", "Seychelles", "British Virgin Islands", "Turks and Caicos", "Tahiti", "Samoa", "Sri Lanka", "Mexico"],
+  countries: ["Thailand", "Vietnam", "Cambodia", "Philippines", "India", "Indonesia", "Malaysia", "Panama", "Guatemala", "Costa Rica", "Belize", "Tanzania", "Zanzibar", "Kenya", "Hawaii", "Maldives", "Seychelles", "British Virgin Islands", "Turks and Caicos", "Tahiti", "Samoa", "Sri Lanka", "Mexico", "United States"],
   city: "",
   type: "all",
   openedWithin: "12months",

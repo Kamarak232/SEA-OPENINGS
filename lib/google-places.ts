@@ -76,6 +76,7 @@ const TYPE_TERM: Record<string, string> = {
   guesthouse: "guesthouse",
   resort:     "resort",
   all:        "hotel OR hostel OR restaurant",
+  hvac:       "HVAC company OR air conditioning contractor OR heating cooling service",
 };
 
 // ─── website detection ────────────────────────────────────────────────────────
@@ -234,6 +235,9 @@ const CITY_GL: Record<string, string> = {
   "Apia": "ws", "Savai'i": "ws", "Upolu": "ws", "Lalomanu": "ws", "Aleipata": "ws", "Falealupo": "ws",
   "Colombo": "lk", "Galle": "lk", "Kandy": "lk", "Ella": "lk", "Mirissa": "lk", "Trincomalee": "lk",
   "Mexico City": "mx", "Cancún": "mx", "Tulum": "mx", "Playa del Carmen": "mx", "Puerto Vallarta": "mx", "Oaxaca": "mx",
+  "New York": "us", "Philadelphia": "us", "Miami": "us", "Palm Beach": "us", "Los Angeles": "us", "San Francisco": "us",
+  "Oakland": "us", "Atherton": "us", "Los Altos Hills": "us", "Hillsborough": "us", "Woodside": "us",
+  "Atlanta": "us", "Austin": "us", "Houston": "us", "Dallas": "us",
 };
 
 // ─── low-level API helpers ────────────────────────────────────────────────────

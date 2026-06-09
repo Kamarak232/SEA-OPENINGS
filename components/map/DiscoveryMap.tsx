@@ -177,6 +177,22 @@ const CITY_COORDS: Record<string, [number, number]> = {
   "Playa del Carmen":[-87.0739,  20.6296],
   "Puerto Vallarta":[-105.2253,  20.6534],
   "Oaxaca":         [-96.7266,  17.0669],
+  // United States
+  "New York":       [-74.0060,  40.7128],
+  "Philadelphia":   [-75.1652,  39.9526],
+  "Miami":          [-80.1918,  25.7617],
+  "Palm Beach":     [-80.0364,  26.7056],
+  "Los Angeles":    [-118.2437, 34.0522],
+  "San Francisco":  [-122.4194, 37.7749],
+  "Oakland":        [-122.2711, 37.8044],
+  "Atherton":       [-122.1974, 37.4613],
+  "Los Altos Hills":[-122.1469, 37.3793],
+  "Hillsborough":   [-122.3597, 37.5630],
+  "Woodside":       [-122.2541, 37.4291],
+  "Atlanta":        [-84.3880,  33.7490],
+  "Austin":         [-97.7431,  30.2672],
+  "Houston":        [-95.3698,  29.7604],
+  "Dallas":         [-96.7970,  32.7767],
 };
 
 export default function DiscoveryMap({ businesses, selectedId, onSelectBusiness, city }: Props) {

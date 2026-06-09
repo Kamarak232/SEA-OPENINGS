@@ -9,7 +9,7 @@ import { cn } from "@/lib/cn";
 import { cacheBusinesses } from "@/lib/storage";
 import VenueCard from "./VenueCard";
 
-const COUNTRIES: Country[] = ["Thailand", "India", "Vietnam", "Cambodia", "Philippines", "Indonesia", "Malaysia", "Panama", "Guatemala", "Costa Rica", "Belize", "Tanzania", "Zanzibar", "Kenya", "Hawaii", "Maldives", "Seychelles", "British Virgin Islands", "Turks and Caicos", "Tahiti", "Samoa", "Sri Lanka", "Mexico"];
+const COUNTRIES: Country[] = ["Thailand", "India", "Vietnam", "Cambodia", "Philippines", "Indonesia", "Malaysia", "Panama", "Guatemala", "Costa Rica", "Belize", "Tanzania", "Zanzibar", "Kenya", "Hawaii", "Maldives", "Seychelles", "British Virgin Islands", "Turks and Caicos", "Tahiti", "Samoa", "Sri Lanka", "Mexico", "United States"];
 const COUNTRY_COLORS: Record<Country, string> = {
   Thailand:    "#F59E0B",
   Vietnam:     "#EF4444",
@@ -34,6 +34,7 @@ const COUNTRY_COLORS: Record<Country, string> = {
   Samoa:       "#2DD4BF",
   "Sri Lanka": "#F87171",
   Mexico:      "#65A30D",
+  "United States": "#1D4ED8",
 };
 
 const TYPES: { value: VenueType | "all"; label: string; icon: string }[] = [
@@ -43,6 +44,7 @@ const TYPES: { value: VenueType | "all"; label: string; icon: string }[] = [
   { value: "restaurant", label: "Restaurants",icon: "🍽️" },
   { value: "cafe",       label: "Cafes",      icon: "☕" },
   { value: "bar",        label: "Bars",       icon: "🍸" },
+  { value: "hvac",       label: "HVAC",       icon: "❄️" },
 ];
 
 const OPENED_WITHIN: { value: OpenedWithin; label: string }[] = [
