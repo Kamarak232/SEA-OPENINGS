@@ -9,7 +9,7 @@ import { cn } from "@/lib/cn";
 import { cacheBusinesses } from "@/lib/storage";
 import VenueCard from "./VenueCard";
 
-const COUNTRIES: Country[] = ["Thailand", "India", "Vietnam", "Cambodia", "Philippines", "Indonesia", "Malaysia"];
+const COUNTRIES: Country[] = ["Thailand", "India", "Vietnam", "Cambodia", "Philippines", "Indonesia", "Malaysia", "Panama", "Guatemala", "Costa Rica", "Belize"];
 const COUNTRY_COLORS: Record<Country, string> = {
   Thailand:    "#F59E0B",
   Vietnam:     "#EF4444",
@@ -18,6 +18,10 @@ const COUNTRY_COLORS: Record<Country, string> = {
   India:       "#8B5CF6",
   Indonesia:   "#EC4899",
   Malaysia:    "#14B8A6",
+  Panama:      "#06B6D4",
+  Guatemala:   "#84CC16",
+  "Costa Rica":"#22C55E",
+  Belize:      "#F43F5E",
 };
 
 const TYPES: { value: VenueType | "all"; label: string; icon: string }[] = [

@@ -218,6 +218,10 @@ const CITY_GL: Record<string, string> = {
   "Mumbai": "in", "Delhi": "in", "Goa": "in", "Bangalore": "in", "Jaipur": "in", "Kochi": "in",
   "Bali": "id", "Jakarta": "id", "Lombok": "id", "Yogyakarta": "id", "Surabaya": "id", "Labuan Bajo": "id",
   "Kuala Lumpur": "my", "Penang": "my", "Langkawi": "my", "Kota Kinabalu": "my", "Malacca": "my", "Johor Bahru": "my",
+  "Panama City": "pa", "Bocas del Toro": "pa", "Boquete": "pa", "Pedasi": "pa", "Santa Catalina": "pa", "Playa Venao": "pa",
+  "Guatemala City": "gt", "Antigua": "gt", "Panajachel": "gt", "Flores": "gt", "Quetzaltenango": "gt", "Cobán": "gt",
+  "San José": "cr", "Tamarindo": "cr", "Manuel Antonio": "cr", "Monteverde": "cr", "La Fortuna": "cr", "Puerto Viejo": "cr",
+  "Belize City": "bz", "San Ignacio": "bz", "Placencia": "bz", "Ambergris Caye": "bz", "Hopkins": "bz", "Caye Caulker": "bz",
 };
 
 // ─── low-level API helpers ────────────────────────────────────────────────────

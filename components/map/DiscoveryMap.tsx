@@ -65,6 +65,34 @@ const CITY_COORDS: Record<string, [number, number]> = {
   "Kota Kinabalu":  [116.0735,   5.9804],
   "Malacca":        [102.2501,   2.1896],
   "Johor Bahru":    [103.7578,   1.4927],
+  // Panama
+  "Panama City":    [-79.5188,   8.9936],
+  "Bocas del Toro": [-82.2416,   9.3408],
+  "Boquete":        [-82.4432,   8.7757],
+  "Pedasi":         [-80.0234,   7.5347],
+  "Santa Catalina": [-81.2664,   7.4525],
+  "Playa Venao":    [-80.1833,   7.4333],
+  // Guatemala
+  "Guatemala City": [-90.5069,  14.6349],
+  "Antigua":        [-90.7340,  14.5586],
+  "Panajachel":     [-91.1601,  14.7386],
+  "Flores":         [-89.8940,  16.9293],
+  "Quetzaltenango": [-91.5175,  14.8342],
+  "Cobán":          [-90.3682,  15.4700],
+  // Costa Rica
+  "San José":       [-84.0907,   9.9281],
+  "Tamarindo":      [-85.8381,  10.2994],
+  "Manuel Antonio": [-84.1414,   9.3900],
+  "Monteverde":     [-84.8230,  10.3027],
+  "La Fortuna":     [-84.6432,  10.4683],
+  "Puerto Viejo":   [-82.7593,   9.6561],
+  // Belize
+  "Belize City":    [-88.1773,  17.2510],
+  "San Ignacio":    [-89.0719,  17.1566],
+  "Placencia":      [-88.3621,  16.5069],
+  "Ambergris Caye": [-87.9677,  18.0272],
+  "Hopkins":        [-88.2630,  16.8620],
+  "Caye Caulker":   [-88.0312,  17.7467],
 };
 
 export default function DiscoveryMap({ businesses, selectedId, onSelectBusiness, city }: Props) {

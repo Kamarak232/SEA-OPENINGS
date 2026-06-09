@@ -1,7 +1,7 @@
 // ─── Core domain types ────────────────────────────────────────────────────────
 
 export type VenueType = "hotel" | "hostel" | "restaurant" | "cafe" | "bar" | "guesthouse" | "resort" | "other";
-export type Country = "Thailand" | "Vietnam" | "Cambodia" | "Philippines" | "India" | "Indonesia" | "Malaysia";
+export type Country = "Thailand" | "Vietnam" | "Cambodia" | "Philippines" | "India" | "Indonesia" | "Malaysia" | "Panama" | "Guatemala" | "Costa Rica" | "Belize";
 export type LeadStatus = "discovered" | "contacted" | "demo_sent" | "closed";
 export type SceneType = "tropical" | "mountain" | "urban" | "coastal" | "jungle";
 
@@ -16,6 +16,10 @@ export const CITIES_BY_COUNTRY: Record<Country, string[]> = {
   India:       ["Mumbai", "Delhi", "Goa", "Bangalore", "Jaipur", "Kochi"],
   Indonesia:   ["Bali", "Jakarta", "Lombok", "Yogyakarta", "Surabaya", "Labuan Bajo"],
   Malaysia:    ["Kuala Lumpur", "Penang", "Langkawi", "Kota Kinabalu", "Malacca", "Johor Bahru"],
+  Panama:      ["Panama City", "Bocas del Toro", "Boquete", "Pedasi", "Santa Catalina", "Playa Venao"],
+  Guatemala:   ["Guatemala City", "Antigua", "Panajachel", "Flores", "Quetzaltenango", "Cobán"],
+  "Costa Rica":["San José", "Tamarindo", "Manuel Antonio", "Monteverde", "La Fortuna", "Puerto Viejo"],
+  Belize:      ["Belize City", "San Ignacio", "Placencia", "Ambergris Caye", "Hopkins", "Caye Caulker"],
 };
 
 export const COUNTRY_FLAGS: Record<Country, string> = {
@@ -26,6 +30,10 @@ export const COUNTRY_FLAGS: Record<Country, string> = {
   India:       "🇮🇳",
   Indonesia:   "🇮🇩",
   Malaysia:    "🇲🇾",
+  Panama:      "🇵🇦",
+  Guatemala:   "🇬🇹",
+  "Costa Rica":"🇨🇷",
+  Belize:      "🇧🇿",
 };
 
 export const COUNTRY_COLORS: Record<Country, string> = {
@@ -36,6 +44,10 @@ export const COUNTRY_COLORS: Record<Country, string> = {
   India:       "#8B5CF6",
   Indonesia:   "#EC4899",
   Malaysia:    "#14B8A6",
+  Panama:      "#06B6D4",
+  Guatemala:   "#84CC16",
+  "Costa Rica":"#22C55E",
+  Belize:      "#F43F5E",
 };
 
 // ─── Business / Venue ─────────────────────────────────────────────────────────
@@ -147,7 +159,7 @@ export interface SearchFilters {
 }
 
 export const DEFAULT_FILTERS: SearchFilters = {
-  countries: ["Thailand", "Vietnam", "Cambodia", "Philippines", "India", "Indonesia", "Malaysia"],
+  countries: ["Thailand", "Vietnam", "Cambodia", "Philippines", "India", "Indonesia", "Malaysia", "Panama", "Guatemala", "Costa Rica", "Belize"],
   city: "",
   type: "all",
   openedWithin: "12months",
